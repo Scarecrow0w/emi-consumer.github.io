@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="https://emi-school.ru/local/templates/emischool/favicon.ico" type="image/x-icon">
+    <title>Emi</title>
+    
+    <script src="fonts/fontawesome-free/js/brands.js"></script>
+    <script src="fonts/fontawesome-free/js/solid.js"></script>
+    <script src="fonts/fontawesome-free/js/fontawesome.js"></script>
+  <script type="module" crossorigin src="/emi-consumer.github.io/assets/index.02a2f5eb.js"></script>
+  <link rel="stylesheet" href="/emi-consumer.github.io/assets/index.aaa112f6.css">
+</head>
+  <body class="flex flex-col">
+    <header class="flex flex-col">
+      <nav class="fixed flex flex-col items-center justify-between w-full bg-white border-b border-gray-500 navbar lg:static lg:bg-transparent ">
+          <div class="flex flex-row flex-no-wrap items-center self-start justify-between w-full h-16 lg:self-center lg:flex-none">
+              <div class="flex items-center flex-1 pl-3">
+                  <ul class="hidden space-x-3 lg:flex">
+                      <li><a href="#" class="hover:text-pink-300 lg:text-white">Link</a></li>
+                      <li><a href="#" class="hover:text-pink-300 lg:text-white">Link</a></li>
+                      <li><a href="#" class="hover:text-pink-300 lg:text-white">Link</a></li>
+                  </ul>
+                  <button id="menuBtn" class="flex items-center justify-center hamburger lg:hidden focus:outline-none" type="button">
+                      <span class="hamburger__top-bun"></span><span class="hamburger__bottom-bun"></span>
+                  </button>
+              </div>
+              <div class="flex justify-center flex-1 ">
+                  <a href="#" class="">
+                      <img src="/emi-consumer.github.io/assets/logo.7b18fc75.png" alt="logo" class="h-8">
+                  </a>
+              </div>
+              <div class="flex justify-end flex-1 pr-3 space-x-3 ">
+                  <select name="languageSelector" id="languageSelector" class="hidden bg-transparent cursor-pointer lg:text-white focus:outline-none lg:flex">
+                      <option value="rus">Rus</option>
+                      <option value="eng">Eng</option>
+                  </select>
+                  <a href="#" class="hover:text-pink-300 lg:text-white">
+                      <i class="fas fa-search"></i>
+                  </a>
+              </div>              
+          </div>
+          <div id="menu" class="absolute z-50 flex flex-col w-full px-2 bg-white -left-full lg:flex lg:px-0 lg:bg-transparent lg:static top-16 lg:items-center lg:justify-center">
+              <div class="flex flex-col w-full h-full lg:items-center lg:justify-center main-menu">
+                  <ul class="flex flex-col justify-between w-4/5 text-2xl lg:text-lg lg:items-center lg:flex-row xl:w-1/2 main-links">
+                      <li class="flex items-center h-20 border-b cursor-pointer lg:border-none hover:text-pink-300 nav-title-item">
+                          <a class="hidden lg:text-white nav-link lg:inline hover:text-pink-300" href="#"></a>
+                          <span class="flex items-baseline justify-between w-full lg:hidden">
+                              <span class="nav-title "></span>
+                              <i class="ml-5 text-xs fas fa-chevron-right"></i>
+                          </span>
+                      </li>
+                      <li class="flex items-center h-20 border-b cursor-pointer hover:text-pink-300 lg:border-none nav-title-item">
+                          <a class="hidden lg:text-white nav-link lg:inline hover:text-pink-300" href="#"></a>
+                          <span class="flex items-baseline justify-between w-full lg:hidden">
+                              <span class="nav-title "></span>
+                              <i class="ml-5 text-xs fas fa-chevron-right"></i>
+                          </span>
+                          
+                      </li>
+                      <li class="flex items-center h-20 border-b cursor-pointer lg:border-none nav-title-item hover:text-pink-300">
+                          <a class="hidden lg:text-white nav-link lg:inline hover:text-pink-300" href="#"></a>
+                          <span class="flex items-baseline justify-between w-full lg:hidden">
+                              <span class="nav-title "></span>
+                              <i class="ml-5 text-xs fas fa-chevron-right"></i>
+                          </span>
+                          
+                      </li>
+                      <li class="flex items-center h-20 border-b cursor-pointer lg:border-none nav-title-item hover:text-pink-300">
+                          <a class="hidden lg:text-white nav-link lg:inline hover:text-pink-300" href="#"></a>
+                          <span class="flex items-center justify-between w-full lg:hidden">
+                              <span class="nav-title "></span>
+                              <i class="ml-5 text-xs fas fa-chevron-right"></i>
+                          </span>                            
+                      </li>
+                      <li class="flex items-center h-20 border-b cursor-pointer lg:border-none nav-title-item hover:text-pink-300">
+                          <a class="hidden lg:text-white nav-link lg:inline hover:text-pink-300" href="#"></a>
+                          <span class="flex items-baseline justify-between w-full lg:hidden">
+                              <span class="nav-title "></span>
+                              <i class="ml-5 text-xs fas fa-chevron-right"></i>
+                          </span>                            
+                      </li>
+                  </ul>  
+                  <div class="flex-col hidden w-full bg-white lg:h-96 lg:px-32 submenu">
+                      <div class="flex mt-5">
+                          <a href="" class="flex items-baseline text-3xl hover:text-pink-300"><span class="link-title">Link title</span><i class="ml-5 text-xs fas fa-chevron-right"></i></a>
+                      </div>
+                      <div class="flex w-full h-full space-x-10 ">
+                          <div class="flex flex-col justify-around w-1/4 mt-12 ">
+                              <a href="" class="flex items-center justify-between text-3xl hover:text-pink-300"><span>Link list title</span><i class="text-xs fas fa-chevron-right"></i> </a>
+                              <hr class="w-full ">
+                              <ul class="flex flex-col space-y-2 text-xl">
+                                  <li><a href="" class="hover:text-pink-300">Link</a></li>
+                                  <li><a href="" class="hover:text-pink-300">Link</a></li>
+                                  <li><a href="" class="hover:text-pink-300">Link</a></li>
+                                  <li><a href="" class="hover:text-pink-300">Link</a></li>
+                              </ul>
+                          </div>
+                          <div class="flex flex-col justify-around w-1/4 mt-12 ">
+                              <a href="" class="flex items-center justify-between text-3xl hover:text-pink-300"><span>Link list title</span><i class="text-xs fas fa-chevron-right"></i> </a>
+                              <hr class="w-full ">
+                              <ul class="flex flex-col space-y-2 text-xl">
+                                  <li><a href="" class="hover:text-pink-300">Link</a></li>
+                                  <li><a href="" class="hover:text-pink-300">Link</a></li>
+                                  <li><a href="" class="hover:text-pink-300">Link</a></li>
+                                  <li><a href="" class="hover:text-pink-300">Link</a></li>
+                              </ul>
+                          </div>
+                          <div class="flex flex-col justify-around w-1/4 mt-12 ">
+                              <a href="" class="flex items-center justify-between text-3xl hover:text-pink-300"><span>Link list title</span><i class="text-xs fas fa-chevron-right"></i> </a>
+                              <hr class="w-full ">
+                              <ul class="flex flex-col space-y-2 text-xl">
+                                  <li><a href="" class="hover:text-pink-300">Link</a></li>
+                                  <li><a href="" class="hover:text-pink-300">Link</a></li>
+                                  <li><a href="" class="hover:text-pink-300">Link</a></li>
+                                  <li><a href="" class="hover:text-pink-300">Link</a></li>
+                              </ul>
+                          </div>
+                          <div class="flex flex-col justify-around w-1/4 mt-12 ">
+                              <a href="" class="flex items-center justify-between text-3xl hover:text-pink-300"><span>Link list title</span><i class="text-xs fas fa-chevron-right"></i> </a>
+                              <hr class="w-full ">
+                              <ul class="flex flex-col space-y-2 text-xl">
+                                  <li><a href="" class="hover:text-pink-300">Link</a></li>
+                                  <li><a href="" class="hover:text-pink-300">Link</a></li>
+                                  <li><a href="" class="hover:text-pink-300">Link</a></li>
+                                  <li><a href="" class="hover:text-pink-300">Link</a></li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+                  <ul class="flex items-center justify-around mt-auto border-t lg:space-x-3 lg:hidden">
+                      <li><a href="#" class="text-xl hover:text-pink-300 lg:text-white lg:text-base ">Link</a></li>
+                      <li><a href="#" class="text-xl hover:text-pink-300 lg:text-white lg:text-base ">Link</a></li>
+                      <li><a href="#" class="text-xl hover:text-pink-300 lg:text-white lg:text-base ">Link</a></li>
+                      <li>
+                          <select name="languageSelector" id="languageSelector" class="flex bg-transparent cursor-pointer lg:hidden lg:text-white focus:outline-none">
+                              <option value="rus">Rus</option>
+                              <option value="eng">Eng</option>
+                          </select>
+                      </li>
+                  </ul>
+              </div>      
+              <div class="flex-col hidden w-full transform translate-x-full mobile-submenu">
+                  <span class="mt-3 text-gray-300 cursor-pointer back-to-main-menu"><i class="mr-2 fas fa-chevron-left"></i>Back</span>
+                  <p class="flex items-center h-20 text-3xl border-b">I'm a Submenu</p>
+                  <a href="" class="flex items-center mt-10 text-lg hover:text-pink-300">Link Title</a>
+                  <ul class="flex flex-col mt-16 ml-6 text-xl">
+                      <li class="cursor-pointer h-14 "><span class="flex items-baseline font-medium hover:text-pink-300 mobile-submenu-titles">Link<i class="ml-5 text-xs fas fa-chevron-right"></i></span></li>
+                      <li class="cursor-pointer h-14 "><span class="flex items-baseline font-medium hover:text-pink-300 mobile-submenu-titles">Link<i class="ml-5 text-xs fas fa-chevron-right"></i></span></li>
+                      <li class="cursor-pointer h-14 "><span class="flex items-baseline font-medium hover:text-pink-300 mobile-submenu-titles">Link<i class="ml-5 text-xs fas fa-chevron-right"></i></span></li>
+                      <li class="cursor-pointer h-14 "><span class="flex items-baseline font-medium hover:text-pink-300 mobile-submenu-titles">Link<i class="ml-5 text-xs fas fa-chevron-right"></i></span></li>
+                  </ul>
+              </div>
+              <div class="flex-col hidden w-full transform translate-x-full mobile-submenu-links-container">
+                  <span class="mt-3 text-gray-300 cursor-pointer back-to-mobile-submenu"><i class="mr-2 fas fa-chevron-left"></i>Back</span>
+                  <p class="flex items-center h-20 text-3xl border-b">Title</p>
+                  <a href="" class="flex items-center mt-10 text-lg hover:text-pink-300">Link Title</a>
+                  <ul class="flex flex-col mt-16 ml-6 text-xl">
+                      <li class="cursor-pointer h-14 "><span class="hover:text-pink-300">Link</span></li>
+                      <li class="cursor-pointer h-14 "><span class="hover:text-pink-300">Link</span></li>
+                      <li class="cursor-pointer h-14 "><span class="hover:text-pink-300">Link</span></li>
+                      <li class="cursor-pointer h-14 "><span class="hover:text-pink-300">Link</span></li>
+                  </ul>
+              </div>
+          </div>                
+      </nav>
+      <div class="flex flex-col-reverse items-center justify-center flex-1 text-white 2xl:mb-40 lg:mb-0 2xl:justify-start">
+          <div class="flex flex-col items-center w-4/5 space-y-5 text-center xl:text-left xl:items-start xl:ml-1/6 2xl:pr-96 xl:pr-44">
+              <h1 class="text-5xl">Emi</h1>
+              <p class="text-2xl">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi atque optio a eveniet aliquam laboriosam iste possimus culpa quos suscipit quas, blanditiis unde ratione cum dolore sunt, sint neque. Adipisci.</p>
+              <div class="flex">
+                  <a href="#" class="px-3 py-1 text-lg text-black duration-500 bg-white rounded-3xl hover:bg-gray-700 hover:text-white">Присоединяйтесь к нам</a>
+              </div>
+          </div>
+      </div>        
+  </header>
+  <main class="flex flex-col ">
+    <section class="flex flex-col items-center justify-center">
+      <div class="flex flex-col w-11/12 mt-8 xl:w-3/4">
+        <nav class="breadcrumbs">
+          <ul class="flex gap-2">
+            <li><a href="#">Emi</a></li>
+            <li>/</li>
+            <li><a href="#">Consumer Product Division</a></li>
+            <li>/</li>
+            <li><a href="#" class="font-medium">Link</a></li>
+          </ul>
+        </nav>
+        <div class="flex flex-col w-3/4 gap-4 mx-auto mt-10">
+          <p>Garnier is at the forefront of formulating natural & naturally inspired products, a legacy which began when Garnier patented the first-ever plant-based hair lotion back in 1904.</p>
+          <p>More recently, Garnier has made major steps towards becoming a more natural and sustainable brand. Garnier has transformed many of its products, with formulas of more than 90% natural origin ingredients, certified organic product ranges, and vegan formulas. Garnier has also reduced the weight of some packaging, as well as ensuring it is made from recycled plastic and is more recyclable.</p>
+          <p class="font-medium">Today, Garnier aims to go further and commit to Green Beauty, an end-to-end approach to sustainability. <br>
+            Green Beauty is set to transform Garnier, helping to reduce the brand’s environmental impact at every stage of its value chain.</p>
+        </div>
+        <div class="mx-auto mt-20 2xl:w-3/5">
+          <img class="object-cover" src="/emi-consumer.github.io/assets/LOREAL0278997.b62c5588.jpg" alt="garnier">
+        </div>
+        <div class="flex flex-col mx-auto bg-gray-200 mt-44 md:flex-row">
+          <div class="relative flex items-center justify-center p-3 mx-auto bg-white shadow-md h-72 sm:h-96 md:h-1/2 lg:h-full md:right-5 bottom-10 md:mx-0 ">
+            <img src="/emi-consumer.github.io/assets/Adrien Koskas.9e050028.jpg" alt="Adrien" class="object-cover h-full">
+          </div>
+          <div class="flex flex-col px-5 pb-5 md:w-1/2 ">
+            <h2 class="mt-4 text-3xl md:text-5xl">Our goal is to make Green Beauty accessible to all of us.</h2>
+            <p class="mt-8">“As a world leading mass-market natural beauty brand, we have the opportunity and responsibility to impact real change. Green Beauty will transform the way we do business. Developed with the help of our partners, researchers and customers, this initiative highlights a range of ambitious goals, underpinned by tangible targets. We pledge to lessen our impact on the planet and innovate for a sustainable future. It will take time, but Green Beauty will transform Garnier, and we hope the beauty industry as a whole.”</p>
+            <span class="mt-8 font-medium">Adrien Koskas</span>
+            <span>Garnier Global Brand President</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="flex flex-col mt-32 md:mt-60">
+      <div class="flex flex-col w-full gap-3 px-3 md:flex-row md:px-0">
+        <div class="flex flex-1 border">
+          <img class="object-cover w-full" src="/emi-consumer.github.io/assets/LOREAL0281842.d4a481bc.jpg" alt="bio">
+        </div>
+        <div class="flex flex-1 border">
+          <img class="object-cover w-full" src="/emi-consumer.github.io/assets/LOREAL0281840ORI.5ee4883c.jpg" alt="banana">
+        </div>
+        <div class="flex flex-1 border">
+          <img class="object-cover w-full" src="/emi-consumer.github.io/assets/LOREAL0281841ORI.7073988a.jpg" alt="solaire">
+        </div>
+      </div>
+      <a href="#" class="flex items-center justify-center gap-2 px-4 py-1 mx-auto mt-10 rounded-3xl social-link-instagram hover:text-white social-link"><i class="fab fa-instagram"></i><span>Emi в Instagram</span></a>
+    </section>
+    <section class="flex mt-10">
+      <div class="flex flex-col w-full md:flex-row">
+        <div class="flex items-center justify-center p-10 sm:p-20 md:w-1/2 " style="background-color: #327120;">
+          <div>
+            <img src="/emi-consumer.github.io/assets/LOREAL0283765.6924a02b.jpg" alt="g" class="object-cover ">
+          </div>
+        </div>
+        <div class="flex items-center justify-center bg-gray-200 md:w-1/2">
+          <div class="flex flex-col p-5 md:w-1/2 md:p-0">
+            <h3 class="text-4xl font-medium">Garnier commits to Green Beauty for all of us</h3>
+            <span class="mt-5"><a class="text-blue-400 underline" href="#">Garnier’s <span class="font-medium">Green Beauty</span> initiative</a> is a complete end to end approach to sustainability. The aim is to transform every stage of Garnier’s value chain, reducing or eradicating the brand’s environmental impact: from ingredients sourcing to formulas, as well as packaging and industries.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="flex flex-col items-center gap-5">
+      <div class="flex flex-col items-center p-5 mt-40 md:flex-row lg:p-0 lg:w-1/2">
+        <div class="flex p-5 md:w-1/2 ">
+          <img src="/emi-consumer.github.io/assets/LOREAL0283759ORI-sized.bcfebc93.jpg" alt="eco" class="object-cover ">
+        </div>
+        <div class="flex flex-col p-5 md:w-1/2 ">
+          <h3 class="text-3xl font-medium">Heading</h3>
+          <span class="mt-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto, minus.</span>
+        </div>
+      </div>
+      <div class="flex flex-col items-center p-5 md:flex-row lg:p-0 lg:w-1/2">
+        <div class="flex p-5 md:w-1/2 ">
+          <img src="/emi-consumer.github.io/assets/LOREAL0283759ORI-sized.bcfebc93.jpg" alt="eco" class="object-cover ">
+        </div>
+        <div class="flex flex-col p-5 md:w-1/2 ">
+          <h3 class="text-3xl font-medium">Heading</h3>
+          <span class="mt-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto, minus.</span>
+        </div>
+      </div><div class="flex flex-col items-center p-5 md:flex-row lg:p-0 lg:w-1/2">
+        <div class="flex p-5 md:w-1/2 ">
+          <img src="/emi-consumer.github.io/assets/LOREAL0283759ORI-sized.bcfebc93.jpg" alt="eco" class="object-cover ">
+        </div>
+        <div class="flex flex-col p-5 md:w-1/2 ">
+          <h3 class="text-3xl font-medium">Heading</h3>
+          <span class="mt-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto, minus.</span>
+        </div>
+      </div><div class="flex flex-col items-center p-5 md:flex-row lg:p-0 lg:w-1/2">
+        <div class="flex p-5 md:w-1/2 ">
+          <img src="/emi-consumer.github.io/assets/LOREAL0283759ORI-sized.bcfebc93.jpg" alt="eco" class="object-cover ">
+        </div>
+        <div class="flex flex-col p-5 md:w-1/2 ">
+          <h3 class="text-3xl font-medium">Heading</h3>
+          <span class="mt-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto, minus.</span>
+        </div>
+      </div><div class="flex flex-col items-center p-5 md:flex-row lg:p-0 lg:w-1/2">
+        <div class="flex p-5 md:w-1/2 ">
+          <img src="/emi-consumer.github.io/assets/LOREAL0283759ORI-sized.bcfebc93.jpg" alt="eco" class="object-cover ">
+        </div>
+        <div class="flex flex-col p-5 md:w-1/2 ">
+          <h3 class="text-3xl font-medium">Heading</h3>
+          <span class="mt-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto, minus.</span>
+        </div>
+      </div>
+    </section>
+    <section class="flex justify-center mt-20 md:mt-40">
+        <div class="flex flex-col w-11/12 border-t border-b xl:w-3/4 lg:flex-row">
+            <div class="flex flex-col flex-1">
+                <div class="flex mt-8">
+                    <a href="#" class="">
+                        <img src="https://emi-school.ru/local/templates/emischool/favicon.ico" alt="logo" class="h-16 ">
+                    </a>
+                </div>
+                <div class="flex mt-8 mb-8">
+                    <ul class="space-y-4 text-lg ">
+                        <li class="cursor-pointer hover:text-pink-200"><a href="#">Link</a></li>
+                        <li class="cursor-pointer hover:text-pink-200"><a href="#">Link</a></li>
+                        <li class="cursor-pointer hover:text-pink-200"><a href="#">Link</a></li>
+                        <li class="cursor-pointer hover:text-pink-200"><a href="#">Link</a></li>
+                        <li class="cursor-pointer hover:text-pink-200"><a href="#">Link</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex flex-1 py-3 border-t lg:py-0">
+                <ul class="flex justify-between w-full text-lg font-medium lg:font-normal lg:w-auto lg:justify-start lg:mt-32 lg:ml-auto lg:space-x-7">
+                    <li class="cursor-pointer hover:text-pink-200"><a href="#">Link</a></li>
+                    <li class="cursor-pointer hover:text-pink-200"><a href="#">Link</a></li>
+                    <li class="cursor-pointer hover:text-pink-200"><a href="#">Link</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>  
+  </main>
+
+  <footer class="flex justify-center py-7">
+      <div class="flex flex-col justify-between w-11/12 sm:items-center space-y-7 lg:space-y-0 lg:flex-row xl:w-3/4">
+          <ul class="flex flex-col space-y-4 text-sm text-gray-400 sm:space-x-7 sm:flex-row sm:space-y-0">
+              <li class="hover:text-black"><a href="#">Cookie settings</a></li>
+              <li class="hover:text-black"><a href="#">Term of use</a></li>
+              <li class="hover:text-black"><a href="#">Privacy Policy</a></li>
+              <li class="hover:text-black"><a href="#">Business Customer Privacy Policy</a></li>
+              <li class="hidden lg:block">|</li>
+              <li class="hover:text-black"><a href="#">Accesibility assessment</a></li>
+          </ul>
+          <div class="justify-between hidden w-full sm:flex lg:w-auto lg:justify-start lg:space-x-3">
+              <a href="#" class="flex items-center justify-center text-2xl border rounded-full social-link-vk hover:text-white social-link w-11 h-11"><i class="fab fa-vk"></i></a>
+              <a href="#" class="flex items-center justify-center text-2xl rounded-full social-link-facebook hover:text-white social-link w-11 h-11"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="flex items-center justify-center text-2xl rounded-full social-link-instagram hover:text-white social-link w-11 h-11"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="flex items-center justify-center text-2xl rounded-full social-link-instagram hover:text-white social-link w-11 h-11"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="flex items-center justify-center text-2xl rounded-full social-link-odnoklassniki hover:text-white social-link w-11 h-11"><i class="fab fa-odnoklassniki"></i></a> 
+              <a href="#" class="flex items-center justify-center text-2xl rounded-full social-link-youtube hover:text-white social-link w-11 h-11"><i class="fab fa-youtube"></i></a> 
+          </div>
+          <!-- ссылки на соцсети для экранов <640 px -->
+          <div class="flex flex-col w-full space-y-7 sm:hidden">
+              <div class="flex justify-between">
+                  <a href="#" class="flex items-center justify-center text-2xl border rounded-full social-link-vk hover:text-white social-link w-11 h-11"><i class="fab fa-vk"></i></a>
+                  <a href="#" class="flex items-center justify-center text-2xl rounded-full social-link-facebook hover:text-white social-link w-11 h-11"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#" class="flex items-center justify-center text-2xl rounded-full social-link-instagram hover:text-white social-link w-11 h-11"><i class="fab fa-instagram"></i></a>
+              </div>
+              <div class="flex justify-between">
+                  <a href="#" class="flex items-center justify-center text-2xl rounded-full social-link-instagram hover:text-white social-link w-11 h-11"><i class="fab fa-instagram"></i></a>
+                  <a href="#" class="flex items-center justify-center text-2xl rounded-full social-link-odnoklassniki hover:text-white social-link w-11 h-11"><i class="fab fa-odnoklassniki"></i></a> 
+                  <a href="#" class="flex items-center justify-center text-2xl rounded-full social-link-youtube hover:text-white social-link w-11 h-11"><i class="fab fa-youtube"></i></a> 
+              </div>
+          </div>
+      </div>
+  </footer>
+    
+  </body>
+</html>
