@@ -253,3 +253,51 @@ body {
   }
 
   /* HAMBURGER MENU END */
+
+/* Carousel start */
+.js-carousel {
+    height: 450px;
+}
+
+.b-carousel {
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.b-carousel__prev,
+.b-carousel__next {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.b-carousel__wrap {
+    display: flex;
+    transition: transform .5s;
+    will-change: transform;
+    position: relative;
+    z-index: 1;
+    height: 100%;
+}
+
+.b-carousel__item {
+    flex: 0 0 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.b-carousel__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.s-notransition {
+	transition: 0s;
+}
+
+/* Carousel end */
